@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MainActivityFragment#newInstance} factory method to
+ * Use the {@link QuizFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MainActivityFragment extends Fragment {
+public class QuizFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class MainActivityFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MainActivityFragment() {
+    public QuizFragment() {
         // Required empty public constructor
     }
 
@@ -37,8 +37,8 @@ public class MainActivityFragment extends Fragment {
      * @return A new instance of fragment MainActivityFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MainActivityFragment newInstance(String param1, String param2) {
-        MainActivityFragment fragment = new MainActivityFragment();
+    public static QuizFragment newInstance(String param1, String param2) {
+        QuizFragment fragment = new QuizFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
