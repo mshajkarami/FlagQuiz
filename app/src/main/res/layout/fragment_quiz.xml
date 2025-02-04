@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/quizLinearLayout"
+    tools:context=".QuizFragment">
+
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/question"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/flagImageView"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_description"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/guessCountryTextView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="guess_country"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/flagImageView"
+        app:layout_constraintStart_toStartOf="@+id/flagImageView"
+        app:layout_constraintTop_toBottomOf="@+id/flagImageView" />
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:id="@+id/row1LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/flagImageView"
+        app:layout_constraintStart_toStartOf="@+id/flagImageView"
+        app:layout_constraintTop_toBottomOf="@+id/guessCountryTextView">
+
+        <Button
+            android:id="@+id/reply_button1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/reply_button2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2LinearLayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/flagImageView"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/flagImageView"
+        tools:layout_editor_absoluteY="475dp">
+
+        <Button
+            android:id="@+id/reply_button3"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/reply_button4"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/flagImageView"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/flagImageView"
+        tools:layout_editor_absoluteY="475dp">
+
+        <Button
+            android:id="@+id/reply_button5"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/reply_button6"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row4LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/flagImageView"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/flagImageView"
+        tools:layout_editor_absoluteY="475dp">
+
+        <Button
+            android:id="@+id/reply_button7"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/reply_button8"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
